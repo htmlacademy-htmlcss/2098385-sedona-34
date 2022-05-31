@@ -43,6 +43,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -54,7 +55,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
+      
 
       <section class="catalog-products">
         <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
@@ -110,8 +111,11 @@
       <form class="catalog-filter-cancel" action="https://echo.htmlacademy.ru/" method="get">
         <button class="button" type="submit">Сбросить</button>
       </form>
+    </section></header>
 
-      <select class="select-control" aria-label="Сортировка">
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
@@ -125,7 +129,10 @@
       <a href="#" class="button">
         <span class="visually-hidden">Показать список</span>
       </a>
+      </section>
 
+      <section class="result">
+        <h2 class="visually-hidden">Результаты поиска</h2>
       <ul class="hotel-list">
         <li class="hotel-card">
         <a class="hotel-card-link" href="#">
@@ -176,6 +183,9 @@
               <p class="hotel-rating">Рейтинг: 5</p>
               </li>
       </ul>
+      </section>
+      <section class="pagination">
+        <h2 class="visually-hidden">Страницы</h2>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -202,8 +212,8 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-        
       </ul>
+      </section>
 
       <p class="how-many-hotels-on-page">Гостиниц на странице:
       <select class="select-control" name="how-many-hotels-on-page">
@@ -212,7 +222,7 @@
         <option value="20">20</option>
       </select></p>
 
-    </section>
+   
     <section class="appointment">
       <h2 class="appointment-title-white">Подпишитесь на рассылку</h2>
       <p class="appointment-description-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
