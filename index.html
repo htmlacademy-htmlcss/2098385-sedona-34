@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -37,85 +38,86 @@
             </a>
           </li>
           <li class="navigation-hotels">
-            <a class="navigation-link" href="catalog.html">Хочу сюда</a>
+            <a class="navigation-like" href="catalog.html">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-index">
-      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <img class="sedona" src="images/welcome_to_sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+      <div class="welcome"><img class="sedona" src="images/welcome_to_sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону"></div>
+      <h1 class="uppercase-sedona">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+      
 
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
+            <div class="darker"><h3 class="advantages-title">Настоящий<br>городок</h3>
             <span class="advantages-description">— №1 —</span>
             <p class="advantages-description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+              Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь
+            </p></div>
             <img class="picture-sedona" width="800" height="384" src="images/sedona-town.jpg" alt="Фотография городка Седона">
          
                <ul class="advises-list">
                 <li class="advises-item">
-                  <h4 class="advises-title">Жильё</h4>
+                  <div class="light"><h4 class="advises-title">Жильё</h4>
                   <p class="advises-description">
-                    Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                  </p>
+                    Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
+                  </p></div>
                 </li>
                 <li class="advises-item">
                   <h4 class="advises-title">Еда</h4>
                   <p class="advises-description">
-                    Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                    Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
                   </p>
                 </li>
                 <li class="advises-item">
-                  <h4 class="advises-title">Сувениры</h4>
+                  <div class="light"><h4 class="advises-title">Сувениры</h4>
                   <p class="advises-description">
-                    Не только китайского, но и настоящего местного производства!
-                  </p>
+                    Не только китайского,<br> но и настоящего местного<br> производства!
+                  </p></div>
                 </li>
               </ul>
               </li>
 
         
           <li class="advantages-item">
-            <h3 class="advantages-title">Там есть
+            <div class="darker"><h3 class="advantages-title">Там есть<br>
               мост дьявола</h3>
               
             <span class="advantages-description">— №2 —</span>
             <p class="advantages-description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+              Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется
+            </p></div>
             <img class="picture-sedona" width="800" height="384" src="images/devil-bridge.jpg" alt="Фотография моста Дьявола">
             </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Небольшая
+            <div class="light"><h3 class="advantages-title">Небольшая<br>
               площадь</h3>
             <span class="advantages-description">— №3 —</span>
             <p class="advantages-description">
-              Все достопримечательности находятся очень близко
-            </p>
+              Все достопримечательности<br> находятся очень близко
+            </p></div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Красивая
+            <div class="middle"><h3 class="advantages-title">Красивая<br>
               дорога</h3>
             <span class="advantages-description">— №4 —</span>
             <p class="advantages-description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
+              Ехать в Седону из Лас-Вегаса<br> совсем не скучно!
+            </p></div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Мало
+            <div class="light"><h3 class="advantages-title">Мало<br>
               туристов</h3>
             <span class="advantages-description">— №5 —</span>
             <p class="advantages-description">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
+              Большинство едет в Гранд<br> Каньон и толпится там
+            </p></div>
           </li>
         </ul>
       </section>
@@ -129,7 +131,7 @@
 
     <section class="appointment">
       <h2 class="appointment-title">Подпишитесь на рассылку</h2>
-      <p class="appointment-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="appointment-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
@@ -143,17 +145,17 @@
         <h2 class="visually-hidden">Мы на других ресурсах</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="button button-social" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
+            <a class="button button-social" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>

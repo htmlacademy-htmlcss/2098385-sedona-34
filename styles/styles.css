@@ -1,0 +1,337 @@
+@font-face {
+    font-family:'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");;
+    font-display: swap;
+}
+
+body{
+    font-family:'PT Sans'; sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    color:#000000;
+    
+}
+
+/* навигация */
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration:none;
+    color: inherit;
+}
+/* кнопка хочу сюда */
+.navigation-like{
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    background: #756157;  
+}
+
+
+/* фоновая картинка */
+.welcome{
+background-image:url(../images/welcome-background.jpg);
+background-color: #82B3D3;
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+
+
+/* надпись welcome */
+.sedona{
+    margin-top: 51.4px;
+    margin-bottom: 83.03px;
+}
+
+    
+/* СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ И ТД */
+.uppercase-sedona{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 700;  
+}
+
+/* рассмотрим 5 причин */
+.reasons{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* укажите предполагаемые даты поездки */
+.hotel-search-description{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* строчные заголовки преимущества*/
+.advantages-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px; 
+
+}
+
+/* строчные заголовки советы*/
+.advises-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+/* заинтересовались? индекс */
+.hotel-search-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px; 
+}
+/* поиск гостиницы в седоне */
+.button-hotel-search{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756157;
+    text-decoration:none;
+
+}
+
+/* подпишитесь на рассылку индекс */
+.appointment-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;    
+}
+
+/* подпишитесь на рассылку каталог */
+.appointment-title-black{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;    
+}
+
+/* телефон */
+.footer-phone{
+font-size: 40px;
+line-height: 40px;
+/* identical to box height, or 100% */
+text-align: center;
+text-transform: uppercase;
+text-decoration:none;
+color: inherit;
+}
+
+/* часть из навигации каталог */
+.navigation-link-current{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration:none;
+    color: inherit;
+}
+
+.main-index{
+    text-align: center;
+}
+
+.main-inner{
+    text-align: center;
+    }
+
+/* строка записи индекс с фоном картинкой */
+.appointment{
+    background-image:url(../images/bottom-index-background.jpg);
+    color: #FFFFFF;
+    background-repeat: no-repeat; 
+    background-size: 100% auto;
+    padding-top: 94px; 
+    padding-bottom: 94px;
+    background-color: #82B3D3;
+}
+
+
+/* строка записи каталог белый фон */
+.appointment-catalog {
+    color: #333333;
+    padding-top: 94px; 
+    padding-bottom: 94px;
+}
+
+/* названия отелей */
+.hotel-card-link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+/* фильтры для выбора каталог */
+.inner-header{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+/* заголовки фильтра */
+.catalog-filter-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/* гостиницы седоны каталог */
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    text-align: left;
+    margin-left: 70px;
+}
+
+/* индекс самый светлый фон преимуществ */
+.light{
+    background: rgba(131, 179, 211, 0.12);
+}
+
+/* индекс средняя насыщенность фона преимуществ */
+.middle{
+    background: rgba(131, 179, 211, 0.2);
+}
+
+/* индекс фон преимуществ темнее */
+.darker{
+    background: #82B3D3;
+    color: #FFFFFF;
+    }
+
+/* убираем точки в списках */
+.navigation-list{
+    list-style: none}
+
+.advantages-list{
+    list-style: none}
+
+.advises-list{
+    list-style: none}
+
+.catalog-filter-list{
+    list-style: none
+}
+
+.breadcrumbs{
+    list-style: none
+}
+
+.hotel-list{
+    list-style: none
+}
+
+.pagination{
+    list-style: none
+}
+.footer-social-list{
+    list-style: none;  
+}
+ 
+/* ссылки на соцсети */
+.button-social{
+    text-decoration: none;
+    color: #83B3D3;
+}
+
+/* хлебные крошки каталог ссылка на главную */
+.breadcrumbs-link{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+/* каталог кнопки для фильтра применить сбросить */
+.button-catalog-one{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #82B3D3;
+}
+.button-catalog-two{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/* каталог три кнопки показать */
+.button-show{
+    color: #000000;
+    text-decoration:none;
+}
+
+/* каталог кнопки подробнее */
+.hotel-card-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    background: #756157;
+    text-decoration:none;
+}
+
+/* каталог кнопки в избранное */
+.button-like{
+    background:#82B3D3;
+}
+
+/* каталог в избранном */
+.button-liked{
+    background:#7DB54F;
+}
+
+/* пагинация каталог */
+.pagination-link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #82B3D3;
+    text-decoration:none; 
+}
+
+.pagination-current{
+    color: #000000;
+    background: #F2F2F2;
+}
+
+/* рейтинг */
+.hotel-rating{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background: #F2F2F2;
+    }
