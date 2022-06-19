@@ -1,0 +1,533 @@
+@font-face {
+    font-family:'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");;
+    font-display: swap;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family:'PT Sans'; sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    color:#000000;
+
+}
+
+/* навигация */
+
+.navigation{
+  display:flex;
+  width: 1070px;
+  margin:0 auto;
+  }
+
+.main-header-logo{
+  display: block;
+  margin: 0;
+}
+
+.navigation-list{
+  display: flex;
+  max-width: 520px;
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.navigation-user{
+  display: flex;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration:none;
+    color: inherit;
+}
+/* кнопка хочу сюда */
+.navigation-like{
+
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    background: #756157;
+
+}
+
+
+.main-index{
+  flex-grow:1;
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* фоновая картинка */
+.welcome{
+background-image:url(../images/welcome-background.jpg);
+background-color: #82B3D3;
+background-repeat: no-repeat;
+}
+
+/* картинка welcome */
+.sedona{
+ display: block;
+ padding-top: 51.4px;
+ padding-bottom: 82px;
+ padding-left: 371.3px;
+ margin: 0;
+}
+
+.welcome{
+  margin: 0;
+}
+
+/* СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ И ТД */
+.uppercase-sedona{
+  display: block;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* рассмотрим 5 причин */
+.reasons{
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+/* списки преимуществ и рекомендации */
+
+
+.advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    list-style: none}
+
+
+    .advantages-item{
+     width: 400px;
+    }
+
+.advantages-description{
+  display: block;
+  margin:0;
+}
+
+.advises-description{
+  margin:0;
+}
+
+/* картинки в преимуществах*/
+.picture-sedona{
+  display: block;
+  margin:0;
+}
+
+/* строчные заголовки преимущества*/
+.advantages-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+
+}
+
+/* строчные заголовки советы*/
+.advises-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+
+
+/* укажите предполагаемые даты поездки */
+.hotel-search-description{
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+}
+
+/* заинтересовались? индекс */
+.hotel-search-title{
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* поиск гостиницы в седоне */
+.button-hotel-search{
+    display: block;
+    max-width: 574px;
+    margin: auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756157;
+    text-decoration:none;
+
+}
+
+/* подпишитесь на рассылку индекс */
+.appointment-title{
+    display: block;
+    max-width: 404px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.appointment-description{
+  max-width: 475px;
+  margin: 0 auto;
+}
+
+
+/* строка записи индекс с фоном картинкой */
+.appointment{
+  background-image:url(../images/bottom-index-background.jpg);
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #82B3D3;
+}
+
+/* подвал индекс */
+.page-footer{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* соцсети */
+.footer-social-list{
+  display: flex;
+  flex-direction: column;
+  max-width: 142px;
+}
+
+/* телефон */
+.phone{
+  width: 331px;
+  margin: 0 auto;
+}
+.footer-phone{
+font-size: 40px;
+line-height: 40px;
+/* identical to box height, or 100% */
+text-transform: uppercase;
+text-decoration:none;
+color: inherit;
+}
+
+/* ссылка индекс футер на hnml academy  */
+.htmlacademy-link{
+  display: block;
+  max-width: 115px;
+  margin-left: auto;
+}
+
+
+
+/* часть из навигации каталог */
+.navigation-link-current{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration:none;
+    color: inherit;
+}
+
+/* кнопка хочу сюда каталог */
+.navigation-like-inner{
+  text-transform: uppercase;
+  text-decoration:none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FFFFFF;
+  background: #756157;
+}
+
+
+.main-inner{
+  flex-grow:1;
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  }
+
+.inner-header-title{
+  display: block;
+  margin: 0;
+  max-width: 495px;
+}
+
+/* сортировка каталог */
+.sorting{
+  display: flex;
+  max-width: 1057;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.icons-sort-inner{
+  display: flex;
+  max-width: 210px;
+}
+
+/* названия отелей */
+.hotel-card-link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+/* фильтры для выбора каталог */
+.inner-header{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+/* заголовки фильтра */
+.catalog-filter-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/* гостиницы седоны каталог */
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    text-align: left;
+    margin-left: 70px;
+}
+
+/* индекс самый светлый фон преимуществ */
+.light{
+    background: rgba(131, 179, 211, 0.12);
+}
+
+/* индекс средняя насыщенность фона преимуществ */
+.middle{
+    background: rgba(131, 179, 211, 0.2);
+}
+
+/* индекс фон преимуществ темнее */
+.darker{
+    background: #82B3D3;
+    color: #FFFFFF;
+    }
+
+
+
+    /* убираем точки в списках */
+
+.catalog-filter-list{
+    list-style: none
+}
+
+.breadcrumbs{
+    list-style: none
+}
+
+.pagination{
+    list-style: none
+}
+.footer-social-list{
+    list-style: none;
+}
+
+/* ссылки на соцсети */
+.button-social{
+    text-decoration: none;
+    color: #83B3D3;
+}
+
+/* хлебные крошки каталог ссылка на главную */
+.breadcrumbs-link{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+/* каталог кнопки для фильтра применить сбросить */
+.button-catalog-one{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #82B3D3;
+}
+.button-catalog-two{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.hotel-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1057px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none}
+}
+
+.hotel-card-image{
+  display: block;
+  margin: 0;
+}
+.hotel-card-title{
+  display: block;
+  margin: 0;
+  text-align: left;
+}
+
+.hotel-card-kind{
+  margin: 0;
+  text-align: left;
+}
+
+.hotel-card-price{
+  margin: 0;
+}
+
+
+.hotel-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* каталог три кнопки показать */
+.button-show{
+    color: #000000;
+    text-decoration:none;
+}
+
+/* каталог кнопки подробнее */
+.hotel-card-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756157;
+    text-decoration:none;
+}
+
+/* каталог кнопки в избранное */
+.button-like{
+    background:#82B3D3;
+}
+
+/* каталог в избранном */
+.button-liked{
+    background:#7DB54F;
+}
+
+/* пагинация каталог */
+.pagination-link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #82B3D3;
+    text-decoration:none;
+}
+
+.pagination-current{
+    color: #000000;
+    background: #F2F2F2;
+}
+
+/* рейтинг */
+.hotel-rating{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    background: #F2F2F2;
+    }
+
+    /* подпишитесь на рассылку каталог */
+.appointment-title-black{
+    display: block;
+    max-width: 404px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.appointment-description-black{
+  max-width: 475px;
+  margin: 0 auto;
+
+}
+
+/* строка записи каталог белый фон */
+.appointment-catalog {
+  width: 1200px;
+  color: #333333;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
