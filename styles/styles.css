@@ -300,7 +300,7 @@ background-repeat: no-repeat;
   list-style-type: none;
 }
 
-..footer-social-item{
+.footer-social-item{
   min-width: 45px;
   min-height: 35px;
 }
@@ -386,7 +386,7 @@ color: inherit;
 /* сортировка каталог */
 .sorting{
   display: flex;
-  flex-grow:1;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-left: 71px;
@@ -395,17 +395,31 @@ color: inherit;
   min-height: 49px;
 }
 
-.select-control{
-  margin-right: auto;
+/* найдено гостиниц */
+.search-results{
+  display:block;
+  margin: 0;
+  font-weight:700;
+  font-size:30px;
+  line-height:36px;
+  text-transform: uppercase;
+}
+
+/* иконки сортинг каталог */
+.button-show{
+  width: 48px;
+  height: 48px;
+  color: #000000;
+  text-decoration:none;
 }
 
 .icons-sort-inner{
   min-width: 160px;
   margin-left: auto;
 }
-.button-show{
-  width: 48px;
-  height: 48px;
+
+.select-control{
+  margin-left: auto;
 }
 
 /* названия отелей */
@@ -539,11 +553,6 @@ color: inherit;
 
 }
 
-/* каталог три кнопки показать */
-.button-show{
-    color: #000000;
-    text-decoration:none;
-}
 
 /* каталог кнопки подробнее */
 .hotel-card-button{
@@ -566,20 +575,7 @@ color: inherit;
     background:#7DB54F;
 }
 
-/* пагинация каталог */
-.pagination-link{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    color: #FFFFFF;
-    background: #82B3D3;
-    text-decoration:none;
-}
 
-.pagination-current{
-    color: #000000;
-    background: #F2F2F2;
-}
 
 /* рейтинг */
 .hotel-rating{
@@ -592,6 +588,7 @@ color: inherit;
 /* пагинация */
 .pagination{
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none
 }
 
@@ -599,12 +596,29 @@ color: inherit;
   margin-right: 8px;
 }
 
+.pagination-item{
+ margin-bottom: 8px;
+}
+
+/* пагинация каталог */
 .pagination-link{
   display: block;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background: #82B3D3;
+  text-decoration:none;
+  text-align: center;
+  padding-top: 12px;
+  }
+
+.pagination-current{
+  color: #000000;
+  background: #F2F2F2;
 }
 
 .how-many-hotels-on-page{
