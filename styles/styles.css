@@ -387,10 +387,8 @@ color: inherit;
 .sorting{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  margin-left: 71px;
-  margin-right: 72px;
+  max-width: 1057px;
+  margin: auto;
   margin-bottom: 56px;
   min-height: 49px;
 }
@@ -399,11 +397,13 @@ color: inherit;
 .search-results{
   display:block;
   margin: 0;
+  
   font-weight:700;
   font-size:30px;
   line-height:36px;
   text-transform: uppercase;
 }
+
 
 /* иконки сортинг каталог */
 .button-show{
@@ -418,9 +418,6 @@ color: inherit;
   margin-left: auto;
 }
 
-.select-control{
-  margin-left: auto;
-}
 
 /* названия отелей */
 .hotel-card-link{
@@ -516,11 +513,12 @@ color: inherit;
 .hotel-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1057px;
   margin: 0 auto;
+  margin-bottom: 96px;
   padding: 0;
   list-style-type: none
+  
 }
 
 .hotel-card-image{
@@ -548,9 +546,12 @@ color: inherit;
 .hotel-card{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
+  margin-right: 18px;
+}
 
+.hotel-card:nth-child(3){
+  margin-right: 0;
 }
 
 
@@ -586,10 +587,21 @@ color: inherit;
     }
 
 /* пагинация */
+.pagination-and-pages{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1056px;
+  margin: auto;
+
+}
+
 .pagination{
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none
+  max-width: 365;
+  padding: 0;
+  list-style-type: none;
 }
 
 .pagination-item:not(:last-child) {
@@ -600,9 +612,9 @@ color: inherit;
  margin-bottom: 8px;
 }
 
-/* пагинация каталог */
 .pagination-link{
   display: block;
+  margin: 0;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
@@ -622,7 +634,7 @@ color: inherit;
 }
 
 .how-many-hotels-on-page{
-  margin-left: auto;
+
 }
 
 /* подпишитесь на рассылку каталог */
