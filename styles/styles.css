@@ -390,20 +390,23 @@ color: inherit;
   max-width: 1057px;
   margin: auto;
   margin-bottom: 56px;
-  min-height: 49px;
 }
 
 /* найдено гостиниц */
 .search-results{
   display:block;
   margin: 0;
-  
   font-weight:700;
   font-size:30px;
   line-height:36px;
   text-transform: uppercase;
+  margin-right: 191px;
 }
 
+/* оено сортинга */
+.poor-middle-reach{
+  margin-left: ;
+}
 
 /* иконки сортинг каталог */
 .button-show{
