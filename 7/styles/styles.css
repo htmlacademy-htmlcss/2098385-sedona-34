@@ -531,6 +531,7 @@ color: inherit;
 }
 .hotel-card-title{
   display: block;
+  max-width: 300px;
   margin: 0;
   margin-bottom: 16px;
   text-align: left;
@@ -539,7 +540,7 @@ color: inherit;
 .about-hotel{
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: min-content 37px 37px;
+  grid-template-rows: min-content min-content min-content;
   gap:16px;
 }
 .hotel-card-kind{
@@ -573,7 +574,8 @@ color: inherit;
     color: #FFFFFF;
     background: #756157;
     text-decoration:none;
-    padding-top: 8px;
+    padding-top: 9px;
+    padding-bottom: 8px;
 }
 
 /* каталог кнопки в избранное */
@@ -593,7 +595,8 @@ color: inherit;
     line-height: 20px;
     text-transform: uppercase;
     background: #F2F2F2;
-    padding-top: 8px;
+    padding-top: 9px;
+    padding-bottom: 8px;
     }
 
 /* пагинация */
