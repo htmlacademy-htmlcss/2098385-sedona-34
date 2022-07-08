@@ -121,6 +121,20 @@ body{
     margin-right: 70px;
     margin-left: 20px;
 }
+.navigation-like:hover{
+  background-color: #615048;
+}
+
+.navigation-like:focus{
+  background-color: #615048;
+}
+.navigation-like:disabled{
+  background-color:#E5E5E5;
+}
+.navigation-like:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .navigation-icons{
   display: block;
@@ -319,6 +333,13 @@ min-width: 485px;
 
 .button-hotel-search:focus{
   background-color: #615048;
+}
+.button-hotel-search:disabled{
+  background-color:#E5E5E5;
+}
+.button-hotel-search:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-search{
@@ -719,18 +740,62 @@ color: inherit;
     padding-top: 9px;
     padding-bottom: 8px;
     padding-left: 5px;
-    padding-right: 5px;
-    
+    padding-right: 5px;   
+}
+
+.button-brown:hover{
+  background-color: #615048;
+}
+
+.button-brown:focus{
+  background-color: #615048;
+}
+.button-brown:disabled{
+  background-color:#E5E5E5;
+}
+.button-brown:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* каталог кнопки в избранное */
-.button-like{
-    background:#82B3D3;
+.button-blue{
+    background-color:#82B3D3;
 }
+
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+
+.button-blue:focus{
+  background-color: #68A2CA;
+}
+.button-blue:disabled{
+  background-color:#E5E5E5;
+}
+.button-blue:active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* каталог в избранном */
 .button-liked{
     background:#7DB54F;
+}
+.button-liked:hover{
+  background-color: #6C9E42;
+}
+
+.button-liked:focus{
+  background-color: #6C9E42;
+}
+.button-liked:disabled{
+  background-color:#E5E5E5;
+}
+.button-liked:active{
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* рейтинг */
