@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="main-header-logo">
@@ -31,15 +32,15 @@
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-love">
             <a class="navigation-link navigation-icons" href="#">
-              <span class="visually-hidden">
-                Поставить лайк
+              <span class="navigation-hearts">
+                12
               </span>
             </a>
           </li>
           <li class="navigation-hotels">
-            <a class="navigation-like" href="catalog.html">Хочу сюда</a>
+            <a class="navigation-like button" href="catalog.html">Хочу сюда</a>
           </li>
 
         </ul>
@@ -47,7 +48,7 @@
     </header>
 
     <main class="main-index">
-      <div class="welcome"><img class="sedona" src="images/welcome_to_sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону"></div>
+      <div class="welcome"><span class="divider"><span><img class="sedona" src="images/welcome_to_sedona.svg" width="458" height="352" alt="Добро пожаловать в Седону"></div>
       <h1 class="uppercase-sedona">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
 
 
@@ -67,21 +68,21 @@
           <li class="picture-sedona">
               <img class="picture-sedona" width="800" height="384" src="images/sedona-town.jpg" alt="Фотография городка Седона">
           </li>
-          <li class="advantages-item light">
+          <li class="advantages-item light living">
             <h4 class="advises-title">Жильё</h4>
                 <p class="advises-description">
                   Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
                 </p>
           </li>
 
-          <li  class="advantages-item">
+          <li  class="advantages-item eating">
             <h4 class="advises-title">Еда</h4>
                 <p class="advises-description">
                   Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
                 </p>
           </li>
 
-          <li class="advantages-item light">
+          <li class="advantages-item light gifts">
             <h4 class="advises-title">Сувениры</h4>
                 <p class="advises-description">
                   Не только китайского,<br> но и настоящего местного<br> производства!
@@ -134,7 +135,7 @@
       <h2 class="hotel-search-title">Заинтересовались?</h2>
       <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a class="button-hotel-search" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      <a class="button-hotel-search button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
     </section>
 
     <section class="appointment">
@@ -154,17 +155,17 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button button-social" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
+              <span class="visually-hidden footer-social-vk">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button button-social" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм</span>
+              <span class="visually-hidden footer-social-tg">Телеграмм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
+              <span class="visually-hidden footer-social-yt">Youtube</span>
             </a>
           </li>
         </ul>
@@ -181,5 +182,6 @@
         </section>
 
     </footer>
+  </div>
   </body>
 </html>

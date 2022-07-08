@@ -27,9 +27,15 @@ body{
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    background-color: #FFFFFF;
+    background-color:  #E5E5E5;
     color:#000000;
 
+}
+
+.container{
+  background-color:#FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* навигация */
@@ -44,6 +50,7 @@ body{
 .main-header-logo{
   position: absolute;
   margin-left: 70px;
+  z-index: 1;
 }
 
 .navigation-list{
@@ -91,6 +98,7 @@ body{
     margin-top: 15px;
     margin-bottom: 14px;
     margin-right: 70px;
+    margin-left: 20px;
 }
 
 .navigation-icons{
@@ -99,6 +107,36 @@ body{
   min-height: 66px;
   margin: 0;
   padding: 0;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url(../images/search_head.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link{
+  background-image: url(../images/favorite_head.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navigation-love{
+  position: relative;
+}
+.navigation-hearts{
+  position: absolute;
+  left:25px;
+  top: 15px;
+  background-color: #7DB54F;;
+  color: #FFFFFF;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align:center;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .main-index{
@@ -111,9 +149,19 @@ body{
 
 /* фоновая картинка */
 .welcome{
+position: relative;  
 background-image:url(../images/welcome-background.jpg);
 background-color: #82B3D3;
 background-repeat: no-repeat;
+margin: 0;
+min-width: 485px;
+}
+
+.welcome::after{
+  content: "";
+  position: absolute;
+  background-image: url(../images/bottom-welcome.svg);
+  background-repeat: no-repeat;
 }
 
 /* картинка welcome */
@@ -125,9 +173,6 @@ background-repeat: no-repeat;
  margin: 0;
 }
 
-.welcome{
-  margin: 0;
-}
 
 /* СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ И ТД */
 .uppercase-sedona{
@@ -265,6 +310,42 @@ background-repeat: no-repeat;
   margin-bottom: 46px;
 }
 
+/* индекс самый светлый фон преимуществ */
+.light{
+  background: rgba(131, 179, 211, 0.12);
+ 
+}
+
+/* индекс средняя насыщенность фона преимуществ */
+.middle{
+  background: rgba(131, 179, 211, 0.2);
+}
+
+/* индекс фон преимуществ темнее */
+.darker{
+  background: #82B3D3;
+  color: #FFFFFF;
+  }
+
+
+/* иконки в преимуществах */
+.living
+{ background-image: url(../images/home-icon.png);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.eating{
+  background-image: url(../images/food-icon.png);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.gifts{
+  background-image: url(../images/food-icon.png);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
 
 /* строка записи индекс с фоном картинкой */
 .appointment{
@@ -294,14 +375,14 @@ background-repeat: no-repeat;
 /* соцсети */
 .footer-social-list{
   display: flex;
-  flex-direction: column;
-  min-width: 142px;
-  margin-left: 70px;
+  flex-wrap: wrap;
+  min-width: 145px;
   list-style-type: none;
+  margin-left: 70px;
 }
 
 .footer-social-item{
-  min-width: 45px;
+  min-width: 47px;
   min-height: 35px;
 }
 
@@ -434,6 +515,8 @@ color: inherit;
 /* фильтры для выбора каталог */
 .inner-header{
     background-color: #82B3D3;
+    background-image: url(../images/catalog-filter.jpg);
+    background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: left;
     padding: 70px;
@@ -459,23 +542,6 @@ color: inherit;
     line-height: 78px;
     text-align: left;
 }
-
-/* индекс самый светлый фон преимуществ */
-.light{
-    background: rgba(131, 179, 211, 0.12);
-}
-
-/* индекс средняя насыщенность фона преимуществ */
-.middle{
-    background: rgba(131, 179, 211, 0.2);
-}
-
-/* индекс фон преимуществ темнее */
-.darker{
-    background: #82B3D3;
-    color: #FFFFFF;
-    }
-
 
 
     /* убираем точки в списках */
@@ -601,7 +667,16 @@ color: inherit;
     background: #F2F2F2;
     padding-top: 9px;
     padding-bottom: 8px;
+    border-radius: 4px;
     }
+
+/* звёзды */
+.four_stars{
+  grid-column: 1/2;
+  background-image: url(../images/star.svg);
+  background-repeat: repeat-x;
+  
+}
 
 /* пагинация */
 .pagination-and-pages{
@@ -627,6 +702,7 @@ color: inherit;
 
 .pagination-item{
  margin-bottom: 8px;
+
 }
 
 .pagination-link{
@@ -645,6 +721,7 @@ color: inherit;
   text-decoration:none;
   text-align: center;
   padding-top: 12px;
+  border-radius: 4px;
   }
 
 .pagination-current{
@@ -690,3 +767,10 @@ color: inherit;
   overflow: hidden;
 }
 
+/* кнопки */
+.button{
+  border-radius: 4px;
+  cursor:pointer;
+  border: 0;
+  display: inline-block;
+}
