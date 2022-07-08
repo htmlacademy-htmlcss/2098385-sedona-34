@@ -29,7 +29,6 @@ body{
     font-weight: 400;
     background-color:  #E5E5E5;
     color:#000000;
-
 }
 
 .container{
@@ -37,6 +36,15 @@ body{
   width: 1200px;
   margin: 0 auto;
 }
+
+/* кнопки */
+.button{
+  border-radius: 4px;
+  cursor:pointer;
+  border: 0;
+  display: inline-block;
+}
+
 
 /* навигация */
 
@@ -62,6 +70,9 @@ body{
   padding: 0;
   list-style-type: none
 }
+.navigation-item{
+  position: relative;
+}
 
 .navigation-user{
   display: flex;
@@ -76,7 +87,17 @@ body{
     line-height: 26px;
     font-weight: 700;
     text-decoration:none;
-    color: inherit;
+    color: inherit;}
+
+.navigation-link-current::before{
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+  z-index: 2;
 }
 /* кнопка хочу сюда */
 .navigation-like{
@@ -162,12 +183,17 @@ min-width: 485px;
   position: absolute;
   background-image: url(../images/bottom-welcome.svg);
   background-repeat: no-repeat;
+  width:100%;
+  height: 57px;
+  left:0;
+  bottom:0;
+  right: 0;
 }
 
 /* картинка welcome */
 .sedona{
  display: block;
- padding-top: 51.4px;
+ padding-top: 51px;
  padding-bottom: 82px;
  padding-left: 371.3px;
  margin: 0;
@@ -287,27 +313,17 @@ min-width: 485px;
     text-decoration:none;
     padding:12px 15px;
 }
+.button-hotel-search:hover{
+  background-color: #615048;
+}
+
+.button-hotel-search:focus{
+  background-color: #615048;
+}
 
 .hotel-search{
   margin: 0;
   margin-bottom: 93px;
-}
-
-/* подпишитесь на рассылку индекс */
-.appointment-title{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 29px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-}
-
-.appointment-description{
-  max-width: 475px;
-  margin: 0 auto;
-  margin-bottom: 46px;
 }
 
 /* индекс самый светлый фон преимуществ */
@@ -342,9 +358,26 @@ min-width: 485px;
 }
 
 .gifts{
-  background-image: url(../images/food-icon.png);
+  background-image: url(../images/gifts-icon.png);
   background-repeat: no-repeat;
   background-position: center 80px;
+}
+
+/* подпишитесь на рассылку индекс */
+.appointment-title{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.appointment-description{
+max-width: 475px;
+margin: 0 auto;
+margin-bottom: 46px;
 }
 
 /* строка записи индекс с фоном картинкой */
@@ -359,7 +392,27 @@ min-width: 485px;
   margin-bottom: 40px;
 }
 
+.appointment-form{
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  justify-content: center;
+}
 
+.newsletter-button{
+  min-width: 200px;
+  height: 60px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family:'PT Sans'; sans-serif; ;
+}
 
 /* подвал индекс */
 .page-footer{
@@ -367,10 +420,8 @@ min-width: 485px;
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 30px;
-  justify-content: space-between;
+
 }
-
-
 
 /* соцсети */
 .footer-social-list{
@@ -378,12 +429,31 @@ min-width: 485px;
   flex-wrap: wrap;
   min-width: 145px;
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
   margin-left: 70px;
 }
 
 .footer-social-item{
+  position: relative;
   min-width: 47px;
   min-height: 35px;
+}
+
+
+/* ссылки на соцсети */
+.button-social{
+    text-decoration: none;
+    color: #83B3D3;
+}
+
+.footer-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 /* телефон */
@@ -491,10 +561,20 @@ color: inherit;
 
 /* иконки сортинг каталог */
 .button-show{
+  position: relative;
   width: 48px;
   height: 48px;
   color: #000000;
   text-decoration:none;
+}
+
+.show-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;  
 }
 
 .icons-sort-inner{
@@ -551,11 +631,6 @@ color: inherit;
 }
 
 
-/* ссылки на соцсети */
-.button-social{
-    text-decoration: none;
-    color: #83B3D3;
-}
 
 /* хлебные крошки каталог ссылка на главную */
 .breadcrumbs-link{
@@ -671,12 +746,32 @@ color: inherit;
     }
 
 /* звёзды */
-.four_stars{
+.stars-four{
   grid-column: 1/2;
   background-image: url(../images/star.svg);
-  background-repeat: repeat-x;
-  
+  height: 20px;
+  background-repeat:space;  
+  margin-top: 10px;
+  width: 87px;
 }
+
+.stars-three{
+  grid-column: 1/2;
+background-image: url(../images/star.svg);
+height: 20px;
+background-repeat:space;  
+margin-top: 10px;
+width: 66px;
+}
+
+.stars-two{
+  grid-column: 1/2;
+  background-image: url(../images/star.svg);
+  height: 20px;
+  background-repeat:space;  
+  margin-top: 10px;
+  width: 43px;
+  }
 
 /* пагинация */
 .pagination-and-pages{
@@ -767,10 +862,3 @@ color: inherit;
   overflow: hidden;
 }
 
-/* кнопки */
-.button{
-  border-radius: 4px;
-  cursor:pointer;
-  border: 0;
-  display: inline-block;
-}
