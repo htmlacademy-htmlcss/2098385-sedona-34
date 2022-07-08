@@ -475,7 +475,21 @@ margin-bottom: 46px;
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #83B3D3;
 }
+
+.footer-icon:hover{ 
+  fill: #68A2CA;
+}
+
+.footer-icon:focus{
+  fill: #68A2CA;
+}
+
+.footer-icon:active{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 
 /* телефон */
 .phone{
