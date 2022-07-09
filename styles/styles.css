@@ -526,6 +526,24 @@ color: inherit;
   margin-right: 70px;
 }
 
+.html-logo{
+  fill:#000000;
+}
+
+.html-logo:hover{
+  fill: #756157;
+}
+
+.html-logo:focus{
+  fill: #756157;;
+}
+
+.html-logo:disabled{
+  fill:#E5E5E5;
+}
+.html-logo:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
 
 
 /* часть из навигации каталог */
