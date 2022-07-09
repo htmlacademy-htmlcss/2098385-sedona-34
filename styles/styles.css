@@ -633,6 +633,35 @@ color: inherit;
   height: 48px;
   color: #000000;
   text-decoration:none;
+  border: 2px solid 
+  #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-current{
+  position: relative;
+  width: 48px;
+  height: 48px;
+  color: #000000;
+  text-decoration:none;
+  border: 2px solid 
+  #000000;;
+  border-radius: 4px;
+}
+
+.button-show:hover{
+  border: 2px solid 
+#000000;
+}
+
+.button-show:focus{
+  border: 2px solid 
+  #68A2CA;
+}
+
+.button-show:active{
+  border: 2px solid 
+#000000;
 }
 
 .show-icon{
@@ -643,6 +672,8 @@ color: inherit;
   left: 0;
   margin: auto;  
 }
+
+
 
 .icons-sort-inner{
   min-width: 160px;
