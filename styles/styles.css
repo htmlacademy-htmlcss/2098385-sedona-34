@@ -504,6 +504,20 @@ text-transform: uppercase;
 text-decoration:none;
 color: inherit;
 }
+.footer-phone:hover{
+  color: #756157;
+}
+
+.footer-phone:focus{
+  color: #756157;;
+}
+
+.footer-phone:disabled{
+  background-color:#E5E5E5;
+}
+.footer-phone:active{
+  color: rgba(117, 97, 87, 0.3);
+}
 
 /* ссылка индекс футер на hnml academy  */
 .htmlacademy-link{
