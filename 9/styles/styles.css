@@ -121,6 +121,20 @@ body{
     margin-right: 70px;
     margin-left: 20px;
 }
+.navigation-like:hover{
+  background-color: #615048;
+}
+
+.navigation-like:focus{
+  background-color: #615048;
+}
+.navigation-like:disabled{
+  background-color:#E5E5E5;
+}
+.navigation-like:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .navigation-icons{
   display: block;
@@ -320,6 +334,13 @@ min-width: 485px;
 .button-hotel-search:focus{
   background-color: #615048;
 }
+.button-hotel-search:disabled{
+  background-color:#E5E5E5;
+}
+.button-hotel-search:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .hotel-search{
   margin: 0;
@@ -454,7 +475,21 @@ margin-bottom: 46px;
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #83B3D3;
 }
+
+.footer-icon:hover{ 
+  fill: #68A2CA;
+}
+
+.footer-icon:focus{
+  fill: #68A2CA;
+}
+
+.footer-icon:active{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 
 /* телефон */
 .phone{
@@ -469,6 +504,20 @@ text-transform: uppercase;
 text-decoration:none;
 color: inherit;
 }
+.footer-phone:hover{
+  color: #756157;
+}
+
+.footer-phone:focus{
+  color: #756157;;
+}
+
+.footer-phone:disabled{
+  background-color:#E5E5E5;
+}
+.footer-phone:active{
+  color: rgba(117, 97, 87, 0.3);
+}
 
 /* ссылка индекс футер на hnml academy  */
 .htmlacademy-link{
@@ -477,6 +526,24 @@ color: inherit;
   margin-right: 70px;
 }
 
+.html-logo{
+  fill:#000000;
+}
+
+.html-logo:hover{
+  fill: #756157;
+}
+
+.html-logo:focus{
+  fill: #756157;;
+}
+
+.html-logo:disabled{
+  fill:#E5E5E5;
+}
+.html-logo:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
 
 
 /* часть из навигации каталог */
@@ -566,6 +633,35 @@ color: inherit;
   height: 48px;
   color: #000000;
   text-decoration:none;
+  border: 2px solid 
+  #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-current{
+  position: relative;
+  width: 48px;
+  height: 48px;
+  color: #000000;
+  text-decoration:none;
+  border: 2px solid 
+  #000000;;
+  border-radius: 4px;
+}
+
+.button-show:hover{
+  border: 2px solid 
+#000000;
+}
+
+.button-show:focus{
+  border: 2px solid 
+  #68A2CA;
+}
+
+.button-show:active{
+  border: 2px solid 
+#000000;
 }
 
 .show-icon{
@@ -576,6 +672,8 @@ color: inherit;
   left: 0;
   margin: auto;  
 }
+
+
 
 .icons-sort-inner{
   min-width: 160px;
@@ -719,18 +817,62 @@ color: inherit;
     padding-top: 9px;
     padding-bottom: 8px;
     padding-left: 5px;
-    padding-right: 5px;
-    
+    padding-right: 5px;   
+}
+
+.button-brown:hover{
+  background-color: #615048;
+}
+
+.button-brown:focus{
+  background-color: #615048;
+}
+.button-brown:disabled{
+  background-color:#E5E5E5;
+}
+.button-brown:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* каталог кнопки в избранное */
-.button-like{
-    background:#82B3D3;
+.button-blue{
+    background-color:#82B3D3;
 }
+
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+
+.button-blue:focus{
+  background-color: #68A2CA;
+}
+.button-blue:disabled{
+  background-color:#E5E5E5;
+}
+.button-blue:active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* каталог в избранном */
 .button-liked{
     background:#7DB54F;
+}
+.button-liked:hover{
+  background-color: #6C9E42;
+}
+
+.button-liked:focus{
+  background-color: #6C9E42;
+}
+.button-liked:disabled{
+  background-color:#E5E5E5;
+}
+.button-liked:active{
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* рейтинг */
@@ -819,11 +961,43 @@ width: 66px;
   border-radius: 4px;
   }
 
+  .pagination-link:hover{
+    background-color: #68A2CA;
+  }
+  
+  .pagination-link:focus{
+    background-color: #68A2CA;
+  }
+  
+  .pagination-link:active{
+    background-color: #82B3D3;
+    color:rgba(255, 255, 255, 0.3);
+  }
+  
+
 .pagination-current{
   color: #000000;
   background: #F2F2F2;
 }
 
+.pagination-current:hover{
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.pagination-current:focus{
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.pagination-current:disabled{
+  color: #000000;
+  background: #F2F2F2;
+}
+.pagination-current:active{
+  color: #000000;
+  background: #F2F2F2;
+}
 
 /* подпишитесь на рассылку каталог */
 .appointment-title-black{
