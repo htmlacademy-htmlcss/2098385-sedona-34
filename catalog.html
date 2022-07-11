@@ -49,10 +49,15 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link" href="index.html">
+              <svg class= "bread-home-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m.162 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"/>
+              </svg>
+              <h2 class="visually-hidden">Главная</h2> 
+              </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link bread-hotels">Гостиницы</a>
           </li>
         </ul>
 
@@ -65,17 +70,23 @@
            <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+              <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
              </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="control-input" type="checkbox" name="parking" checked>Парковка
+              <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+              <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
              </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-              <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
+              <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+              <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
              </label>
             </li>
           </ul>
@@ -86,20 +97,23 @@
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
-              <input type="radio" name="Hotel" value="hotel-choice" checked>
-              Гостиница
+              <input class="visually-hidden control-input" type="radio" name="Hotel" value="hotel-choice" checked>
+              <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input type="radio" name="Hotel" value="motel-choice">
-              Мотель
+              <input class="visually-hidden control-input" type="radio" name="Hotel" value="motel-choice">
+              <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
             </label>
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input type="radio" name="Hotel" value="apartment-choice">
-              Апартаменты
+              <input class="visually-hidden control-input" type="radio" name="Hotel" value="apartment-choice">
+              <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
             </label>
           </li>
         </ul>
@@ -118,7 +132,7 @@
           </div>
 
           <div class="range-scale">
-            <div class="range-bar" style="left: 42px; width: 136px">
+            <div class="range-bar" style="left: 9px; width: 227px">
               <button class="range-toggle toggle-min">
                 <span class="visually-hidden">Изменить минимальную цену.</span>
               </button>

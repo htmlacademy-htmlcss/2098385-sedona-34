@@ -62,6 +62,10 @@ body{
   z-index: 1;
 }
 
+.main-header-logo:hover {
+  box-shadow:inset 0px 0px 0 2px #F2F2F2
+}
+
 .navigation-list{
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +77,10 @@ body{
 }
 .navigation-item{
   position: relative;
+}
+
+.navigation-item:hover{
+  box-shadow:inset 0px 0px 0 2px #F2F2F2
 }
 
 .navigation-user{
@@ -187,6 +195,7 @@ body{
 .welcome{
 position: relative;  
 background-image:url(../images/welcome-background.jpg);
+background-size: cover;
 background-color: #82B3D3;
 background-repeat: no-repeat;
 margin: 0;
@@ -405,6 +414,7 @@ margin-bottom: 46px;
 /* строка записи индекс с фоном картинкой */
 .appointment{
   background-image:url(../images/bottom-index-background.jpg);
+  background-size: cover;
   color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -610,14 +620,6 @@ color: inherit;
   margin-left: 70px;
 }
 
-/* хлебные крошки */
-.breadcrumbs{
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 /* сортировка каталог */
 .sorting{
   display: flex;
@@ -654,6 +656,10 @@ color: inherit;
   line-height: inherit;
   border: solid 3px  #E5E5E5;
   border-radius: 4px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .poor-norm-reach:hover{
@@ -682,6 +688,54 @@ border:solid 3px #3F5E72;
   #E5E5E5;
   border-radius: 4px;
 }
+
+/* хлебные крошки */
+.breadcrumbs{
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  
+  padding: 0;
+  list-style-type: none;
+  font-family: inherit;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.bread-hotels{
+  background-image: url(../images/bread-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  padding-left: 15px;
+  cursor:pointer;
+}
+
+.bread-hotels:hover{
+  color:rgba(255, 255, 255, 0.6);
+}
+.bread-hotels:focus{
+  color:#FFFFFF;
+}
+
+.bread-hotels:active{
+  color:#FFFFFF;
+}
+
+.bread-home-icon{
+  fill: #FFFFFF;
+}
+
+.bread-home-icon:hover{
+  fill:rgba(255, 255, 255, 0.6);
+}
+.bread-home-icon:focus{
+  fill:#FFFFFF;
+}
+.bread-home-icon:active{
+  fill:rgba(255, 255, 255, 0.3);
+}
+
 
 .button-current{
   position: relative;
@@ -739,19 +793,26 @@ border:solid 3px #3F5E72;
 .inner-header{
     background-color: #82B3D3;
     background-image: url(../images/catalog-filter.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: left;
-    padding: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 35px;
     margin-bottom: 50px;
 }
 
 /* заголовки фильтра */
 .catalog-filter-title{
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+   
 }
 
 .catalog-products{
@@ -762,6 +823,13 @@ border:solid 3px #3F5E72;
   display: flex;
   flex-wrap: wrap;  
   justify-content: space-between;
+  margin: 0;
+  padding-bottom: 70px;
+}
+.catalog-filter-group{
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 .price-from-to{
   display: block;
@@ -776,21 +844,22 @@ border:solid 3px #3F5E72;
 .range{
 min-width:288px;
 margin:0;
-margin-left: 50px;
+margin-left: 200px;
 }
 
 .range-wrapper-inputs{
   position: relative;
   margin: 0;
-  margin-bottom: 32px;
+  margin:0;
 }
 
 .range-scale{
 position: relative;
-width: 288px;
+width: 290px;
 height: 4px;
 background-color: #E5E5E5;
-margin-top:70px ;
+margin:0;
+margin-top: 55px;
 }
 
 .range-bar {
@@ -834,17 +903,17 @@ margin-top:70px ;
 }
 
 .range-input{
+  width: 120px;
   border: solid 2px #FFFFFF;
   background: none;
-  height: 48px;
+  height: 46px;
   color:#FFFFFF;
   font-family: inherit;
   font-style: Regular; 
-  padding-left: 19px;
+  
 }
 
 .range-input:hover{
-  
   opacity:60%;}
 
 .range-input:focus{
@@ -861,13 +930,15 @@ outline: none;
   position: absolute;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  padding-left: 20px;
 }
 
 .range-right{
   position: absolute;
-  left:174px;
+  left:146px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  padding-left: 20px;
 }
 
 .catalog-filter-label{
@@ -882,12 +953,12 @@ opacity: 30%;
   position: relative;
   left:100px;
   top:15px;
-  left:290px;
+  left:235px;
 }
 
 .label-from{
   position: relative;
-  left:140px;
+  left:110px;
   top:15px;
 }
 .range-input::-webkit-outer-spin-button,
@@ -897,9 +968,11 @@ opacity: 30%;
 }
 
 .two-buttons{
+  align-self: flex-end;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;  
+  flex-direction: column;
+  
   margin: 0;
   margin-left: 70px;
 }
@@ -908,6 +981,7 @@ opacity: 30%;
 .inner-header-title {
     display: block;
     margin: 0;
+    padding: 0;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 60px;
@@ -919,9 +993,72 @@ opacity: 30%;
     /* убираем точки в списках */
 
 .catalog-filter-list{
-  list-style-type: none
+  list-style-type: none;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
 }
 
+.catalog-filter-item:not(:last-child){
+  margin-bottom: 15px;
+}
+
+/* стилизация для чекбокса */
+.control{
+  position: relative;
+  display: block;
+  padding-left: 38px;
+}
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:focus +.control-mark{
+  box-shadow:inset 0px 0px 0 2px #83B3D3;
+}
+
+.control:active .control-mark{
+  background-color:rgba(255, 255, 255, 0.3); 
+}
+
+.control-input[type="checkbox"]:checked+.control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url("../images/check.svg");
+  content: "";
+}
+
+/* radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
 
 
 /* хлебные крошки каталог ссылка на главную */
@@ -935,16 +1072,18 @@ opacity: 30%;
 .button-catalog-one{
     font-family: inherit;
     min-width: 160px;
-    min-height: 48px;
+    min-height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #82B3D3;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 .button-catalog-two{
+  display: block;
+  margin: 0;
    background: none;
    font-family: inherit;
    font-weight: 400;
@@ -952,6 +1091,7 @@ opacity: 30%;
    font-size: 16px;
    line-height: 20px;
    color: #FFFFFF;
+   justify-content: flex-end;
 }
 
 .button-catalog-two:hover{
@@ -959,8 +1099,8 @@ opacity: 30%;
   opacity:60%;}
 
 .button-catalog-two:focus{
-  border: solid 3px #81B3D2;
-  padding: 3px 3px;
+  box-shadow: inset 1px 0px 0 2px #83B3D3;
+  
  }
 
  .button-catalog-two:active{
@@ -1219,10 +1359,14 @@ width: 66px;
   min-width: 160px;
   height: 50px;
   font: inherit;
-  padding: 14px 20px;
+  padding: 10px 20px;
   border:solid 3px #E5E5E5;
   border-radius: 4px;
   margin-left: 51px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
 
 .how-many-hotels-on-page{
