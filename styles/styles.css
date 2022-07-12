@@ -1589,8 +1589,19 @@ background-color:
   
 }
 
-.tooltip::after{
-  background-image:url(../images/triangle.svg) ;}
+.tooltip-text:after{
+  content: " ";
+  background-image:url(../images/triangle.svg);
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  top: -8px;
+  left:-6px;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 .tooltip-text {
   position: absolute;
@@ -1714,4 +1725,8 @@ padding-top: 10px;}
 .minus:hover{
   fill:#000000;
   opacity: 100%;
+  }
+
+  .modal-container-close {
+    display: none;
   }
