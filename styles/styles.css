@@ -1569,18 +1569,52 @@ background-color: #E6E6E6;
   justify-content: space-between; 
 }
 
-.kids::after{
-  content:" ";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #83B3D3;
-  border-radius: 50%;
-  color:#FFFFFF;
-  left:55px;
-  top:10px;
+.tooltip-toggle{
+position: absolute;
+top:12px;
+left:52px;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+border: 0;
+background-color: 
+#83B3D3;
+}
+.tooltip-toggle:hover .tooltip-icon{
+  border: solid 2px #F2F2F2;
 }
 
+.tooltip {
+  position: absolute;
+  
+}
+
+.tooltip::after{
+  background-image:url(../images/triangle.svg) ;}
+
+.tooltip-text {
+  position: absolute;
+  left:-60px;
+  top:57px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px;
+  border-radius: 10px;
+  display: block;
+  width: 216px;
+  z-index: 1;
+  display: none;
+}
+
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
 
 .when{
   display: flex;
