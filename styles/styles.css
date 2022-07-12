@@ -496,7 +496,6 @@ margin-bottom: 46px;
 }
 
 .footer-icon{
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1271,12 +1270,21 @@ width: 66px;
 
 /* пагинация */
 .pagination-and-pages{
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1056px;
   margin: auto;
+}
 
+.pagination-and-pages::after{
+  content: " ";
+  position: absolute;
+  top:-30px;
+  background-color:#E6E6E6;
+  width: 1055px;
+  height:1px;
 }
 
 .pagination{
@@ -1581,9 +1589,6 @@ border: 0;
 background-color: 
 #83B3D3;
 }
-.tooltip-toggle:hover .tooltip-icon{
-  border: solid 2px #F2F2F2;
-}
 
 .tooltip {
   position: absolute;
@@ -1730,4 +1735,8 @@ padding-top: 10px;}
 
   .modal-container-close {
     display: none;
+  }
+
+  .open{
+    display: block;
   }
