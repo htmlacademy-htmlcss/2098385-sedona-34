@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -70,21 +70,21 @@
               <img class="picture-sedona" width="800" height="384" src="images/sedona-town.jpg" alt="Фотография городка Седона">
           </li>
           <li class="advantages-item light living">
-            <h4 class="advises-title">Жильё</h4>
+            <h3 class="advises-title">Жильё</h4>
                 <p class="advises-description">
                   Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
                 </p>
           </li>
 
           <li  class="advantages-item eating">
-            <h4 class="advises-title">Еда</h4>
+            <h3 class="advises-title">Еда</h4>
                 <p class="advises-description">
                   Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
                 </p>
           </li>
 
           <li class="advantages-item light gifts">
-            <h4 class="advises-title">Сувениры</h4>
+            <h3 class="advises-title">Сувениры</h4>
                 <p class="advises-description">
                   Не только китайского,<br> но и настоящего местного<br> производства!
                 </p>
@@ -103,8 +103,8 @@
                 </p>
           </li>
 
-          <li class="advantages-item light">
-            <h3 class="advantages-title">Небольшая<br>
+          <li class="advantages-item light last-row-advantage">
+            <h3 class="advantages-title last-row-advantage-title">Небольшая<br>
                      площадь</h3>
               <span class="advantages-description">— №3 —</span>
                 <p class="advantages-description">
@@ -112,8 +112,8 @@
                 </p>
           </li>
 
-          <li class="advantages-item middle">
-            <h3 class="advantages-title">Красивая<br>
+          <li class="advantages-item middle last-row-advantage">
+            <h3 class="advantages-title last-row-advantage-title">Красивая<br>
                      дорога</h3>
               <span class="advantages-description">— №4 —</span>
                 <p class="advantages-description">
@@ -121,8 +121,8 @@
                 </p>
           </li>
 
-          <li class="advantages-item light">
-            <h3 class="advantages-title">Мало<br>
+          <li class="advantages-item light last-row-advantage">
+            <h3 class="advantages-title last-row-advantage-title">Мало<br>
                      туристов</h3>
               <span class="advantages-description">— №5 —</span>
                 <p class="advantages-description">
@@ -134,7 +134,7 @@
 
       <section class="hotel-search">
       <h2 class="hotel-search-title">Заинтересовались?</h2>
-      <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
+      <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне   
       </p>
       <a class="button-hotel-search button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
     </section>
@@ -209,13 +209,13 @@
             <label class="modal-lable" for="modal-date">
              Дата заезда:
             </label>
-          <input class="modal-field modal-input" type="text" id="modal-date" name="modal-date" placeholder="27 апреля 2020">
+          <input class="modal-field modal-input" type="text" id="modal-date" name="modal" placeholder="27 апреля 2020">
           </div>
           <div class="when when-leave">
           <label class="modal-lable" for="modal-date">
              Дата выезда:
             </label>
-          <input class="modal-field modal-input" type="text" id="modal-date" name="modal-date" placeholder="1 сентября 2021">
+          <input class="modal-field modal-input" type="text" id="modal-date" name="modal" placeholder="1 сентября 2021">
           </div>
         
          <div class="aduits-kids">
@@ -223,7 +223,7 @@
             Взрослые:
            </label>
            <button class="modal-button first-left">
-            <svg class="minus"width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0L0 1L13 1V0L0 0Z"/>
             </svg>
            </button>
@@ -236,7 +236,7 @@
           </div>
           
           <div class="kids">
-           <label class="modal-lable" for="people">
+           <label class="modal-lable" for="minipeople">
             Дети:
            </label>
            <span class="tooltip">
@@ -256,17 +256,16 @@
           <span class="tooltip-text" role="tooltip" id="tooltip-label">
             Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. 
             Дети до 6 лет размещаются бесплатно.
-          </span>
         </span>
         </span>
            <button class="modal-button second-left">
-            <svg class="minus"width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0L0 1L13 1V0L0 0Z"/>
             </svg>
            </button>
-           <input class="who modal-input" type="text" value="1" id="people">
+           <input class="who modal-input" type="text" value="1" id="minipeople">
            <button class="modal-button second-right">
-            <svg class="plus"width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
             </svg>
            </button>
@@ -280,6 +279,6 @@
         </button>
   
     </div>
-  </div>
+   </div>
   </body>
 </html>
