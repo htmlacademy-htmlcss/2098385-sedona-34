@@ -1507,7 +1507,7 @@ width: 66px;
   margin: auto;
   padding: 0;
   top: 54px;
-  right: 80px;
+  right: 72px;
   width: 53px;
   height: 53px;
   background-color:#F2F2F2;
@@ -1568,7 +1568,7 @@ width: 66px;
 
 .modal-input{ 
   background-color:#F2F2F2 ;
-  min-height: 50px;
+  min-height: 49px;
   color: #000000;
   border: 0;
   border-radius: 4px;
@@ -1591,12 +1591,12 @@ background-color: #E6E6E6;
 
 .modal-field{
   background-image: url(../images/calendar.png);
-  background-position: 395px 18px;
+  background-position: 388px 16px;
   background-repeat: no-repeat;
   color: #000000;
   width: 360px;
   padding-left: 19px;
-  padding-right: 40px;
+  padding-right: 45px;
 }
 
 .who{
@@ -1609,7 +1609,7 @@ background-color: #E6E6E6;
   justify-content: space-between;
   margin: auto;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
 }
 .aduits-kids{
@@ -1629,8 +1629,8 @@ background-color: #E6E6E6;
 
 .tooltip-toggle{
 position: absolute;
-top:12px;
-left:52px;
+top:10px;
+left:54px;
 width: 25px;
 height: 25px;
 border-radius: 50%;
@@ -1685,8 +1685,9 @@ background-color:
 .when{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
+
 .when-come
 {position: relative;}
 
@@ -1698,12 +1699,13 @@ background-color:
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  top:60px;
+  top:59px;
   left:155px; 
 }
 
 .when-leave{
-  position: relative;}
+  position: relative;
+}
 
 .when-leave::after{
   position: absolute;
@@ -1713,7 +1715,7 @@ background-color:
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  top:60px;
+  top:57px;
   left:155px; 
 }
 .modal-lable
@@ -1737,26 +1739,26 @@ padding-top: 10px;}
 
 .first-left{
   position: absolute;
-  top:12px;
-  left:155px;
+  top:9px;
+  left:165px;
 }
 
 .first-right{
   position: absolute;
-  top:12px;
-  left:260px;
+  top:9px;
+  left:253px;
 }
 
 .second-left{
   position: absolute;
-  top:12px;
-  left:95px;
+  top:9px;
+  left:105px;
 }
 
 .second-right{
   position: absolute;
-  top:12px;
-  left:203px;
+  top:9px;
+  left:191px;
 }
 
 .plus{
