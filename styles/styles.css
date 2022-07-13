@@ -102,7 +102,8 @@ body{
   position: absolute;
   right: 20px;
   bottom: 0;
-  left: 20px;
+  left: 18px;
+  width: 68px;
   height: 2px;
   background-color: #756257;
   content: "";
@@ -255,7 +256,7 @@ min-width: 485px;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0;
-    margin-bottom: 92px;
+    margin-bottom: 89px;
     padding: 0;
     list-style-type: none}
 
@@ -302,10 +303,14 @@ min-width: 485px;
   margin-bottom: 30px;
 }
 
+.last-row-advantage-title{
+  margin-top: 102px;
+}
 
 
 /* укажите предполагаемые даты поездки */
 .hotel-search-description{
+    font-family: inherit;
     font-size: 22px;
     line-height: 26px;
     margin: 0;
@@ -406,9 +411,13 @@ min-width: 485px;
 }
 
 .appointment-description{
-max-width: 475px;
+font-family: inherit;
+font-size: 22px;
+line-height: 26px;
+font-weight: 400;
 margin: 0 auto;
 margin-bottom: 46px;
+
 }
 
 /* строка записи индекс с фоном картинкой */
@@ -429,10 +438,11 @@ margin-bottom: 46px;
   flex-wrap: wrap;
   height: 60px;
   justify-content: center;
+  
 }
 
 .field{
-  min-width: 600px;
+  min-width: 578px;
   padding-left: 22px;
   border: 0;
   border-top-left-radius: 10px;
@@ -467,8 +477,6 @@ margin-bottom: 46px;
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 30px;
-
 }
 
 /* соцсети */
@@ -484,10 +492,11 @@ margin-bottom: 46px;
 
 .footer-social-item{
   position: relative;
+  left:12px;
+  top:5px;
   min-width: 47px;
   min-height: 35px;
 }
-
 
 /* ссылки на соцсети */
 .button-social{
@@ -519,17 +528,22 @@ margin-bottom: 46px;
 
 /* телефон */
 .phone{
+  display: block;
   width: 331px;
   margin: 0 auto;
+  
 }
 .footer-phone{
+display: block;
+position: relative;
+top:-5px;
 font-size: 40px;
 line-height: 40px;
-/* identical to box height, or 100% */
 text-transform: uppercase;
 text-decoration:none;
 color: inherit;
 }
+
 .footer-phone:hover{
   color: #756157;
 }
