@@ -571,6 +571,10 @@ color: inherit;
   fill: rgba(117, 97, 87, 0.3);
 }
 
+.creators{
+  margin: 0;
+  margin-bottom: 38px;
+}
 
 /* часть из навигации каталог */
 .navigation-link-current{
